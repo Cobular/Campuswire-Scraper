@@ -1,0 +1,8 @@
+*
+!*.py
+!requirements.txt
+!README.md
+!./posts/.gitkeep
+!./posts/media/.gitkeep
+!.gitignore
+environment.py
