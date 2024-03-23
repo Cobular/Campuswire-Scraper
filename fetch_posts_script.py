@@ -55,7 +55,7 @@ def write_post_to_markdown(post_data: dict, conversation_data: dict, directory: 
         comment_time = comment['createdAt']                                                                                                                            
         markdown_content += f'- **{author_name}**: {comment_body} (Posted on {comment_time})\n\n'                                                                      
     file_path = os.path.join(directory, f'{title}.md')                                                                                                                 
-    with open(file_path, 'w') as md_file:                                                                                                                              
+    with open(file_path, 'w', encoding='utf-8') as md_file:                                                                                                                              
         md_file.write(markdown_content)                                                                                                                                
     return file_path                                                                                                                                                   
 
